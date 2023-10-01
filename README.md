@@ -46,3 +46,11 @@
    ```
 
 ## Example of work
+![карта](https://github.com/JacobKleim/django-orm-watching-storage/assets/119351169/b108027b-0160-46c9-a7a3-50b21d2a2919)
+
+![в хранилще](https://github.com/JacobKleim/django-orm-watching-storage/assets/119351169/64969470-ebf1-4e5e-8d13-9355087f6be4)
+
+![карты](https://github.com/JacobKleim/django-orm-watching-storage/assets/119351169/b87a94f3-e724-459e-af2e-f91087b66595)
+
+
+
