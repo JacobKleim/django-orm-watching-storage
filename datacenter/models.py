@@ -21,6 +21,16 @@ class Visit(models.Model):
     entered_at = models.DateTimeField()
     leaved_at = models.DateTimeField(null=True)
 
+    def __str__(self):
+        return '{user} entered at {entered} {leaved}'.format(
+            user=self.passcard.owner_name,
+            entered=self.entered_at,
+            leaved=(
+                f'leaved at {self.leaved_at}'
+                if self.leaved_at else 'not leaved'
+            )
+        )
+
     def get_duration(self):
         entered_at = timezone.localtime(self.entered_at)
         if not self.leaved_at:
@@ -41,13 +51,3 @@ class Visit(models.Model):
             if duration >= datetime.timedelta(minutes=minutes):
                 return True
         return False
-
-    def __str__(self):
-        return '{user} entered at {entered} {leaved}'.format(
-            user=self.passcard.owner_name,
-            entered=self.entered_at,
-            leaved=(
-                f'leaved at {self.leaved_at}'
-                if self.leaved_at else 'not leaved'
-            )
-        )
