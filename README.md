@@ -24,6 +24,9 @@
    POSTGRES_DB=postgres
    DB_HOST=host
    DB_PORT=5432
+   SECRET_KEY=qtwu2jnx7s
+   DEBUG=True
+   ALLOWED_HOSTS=localhost
    ```
 
 3. Сreate and activate a virtual environment:
@@ -42,8 +45,10 @@
 
 5. Start the project:
    ```bash
-   python main.py
+   python manage.py runserver 0.0.0.0:8000
    ```
+   open the website http://127.0.0.1:8000/
+
 
 ## Example of work
 ![карта](https://github.com/JacobKleim/django-orm-watching-storage/assets/119351169/b108027b-0160-46c9-a7a3-50b21d2a2919)
