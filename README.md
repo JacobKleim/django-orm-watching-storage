@@ -4,7 +4,7 @@
  - This program is designed to monitor the monitoring of visits to the repository and identify suspicious activity in the repository.
 
 ## Technologies and tools
- - Python
+ - Python 3.9.10
 
 ## How to use
 1. Clone this repository and go to the project folder:
@@ -19,14 +19,17 @@
 2. Create a file .new with parameters for the database and enter variables to connect to the database:
    for example:
    ```
-   POSTGRES_USER=user
-   POSTGRES_PASSWORD=password
-   POSTGRES_DB=postgres
-   DB_HOST=host
-   DB_PORT=5432
-   SECRET_KEY=qtwu2jnx7s
-   DEBUG=True
-   ALLOWED_HOSTS=localhost
+   POSTGRES_USER: The username for connecting to the PostgreSQL database.
+   POSTGRES_PASSWORD: The password for connecting to the PostgreSQL database.
+   POSTGRES_DB: The name of the PostgreSQL database to use.
+   DB_HOST: The hostname or IP address of the database server.
+   DB_PORT: The port number on which the database server is listening.
+   
+   SECRET_KEY=A secret key for a particular Django installation. This is used to provide cryptographic signing, and should be set to a unique, unpredictable value.
+   
+   DEBUG=A boolean that turns on/off debug mode. If your app raises an exception when DEBUG is True, Django will display a detailed traceback, including a lot of metadata about your environment, such as all the currently defined Django settings (from settings.py).
+   
+   ALLOWED_HOSTS=A list of strings representing the host/domain names that this Django site can serve. This is a security measure to prevent HTTP Host header attacks, which are possible even under many seemingly-safe web server configurations.
    ```
 
 3. Сreate and activate a virtual environment:
