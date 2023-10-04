@@ -17,12 +17,15 @@
    ```
 
 2. Create a file .new with parameters for the database and enter variables to connect to the database:
-   for example:
    ```
    POSTGRES_USER: The username for connecting to the PostgreSQL database.
+   
    POSTGRES_PASSWORD: The password for connecting to the PostgreSQL database.
+   
    POSTGRES_DB: The name of the PostgreSQL database to use.
+   
    DB_HOST: The hostname or IP address of the database server.
+   
    DB_PORT: The port number on which the database server is listening.
    
    SECRET_KEY=A secret key for a particular Django installation. This is used to provide cryptographic signing, and should be set to a unique, unpredictable value.
